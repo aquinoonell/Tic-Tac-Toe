@@ -31,10 +31,10 @@ int main() {
   }
   
   displayFunc();
-  if(token == 'x' && tie == false){
+  if(token == 'x' && ::tie == false){
     cout << n1 << " Wins!!" << endl;
   }
-  else if(token == 'O' && tie == false){
+  else if(token == 'O' && ::tie == false){
     cout << n2 << " Wins!!" << endl;
   }
   else{
@@ -141,6 +141,6 @@ bool functionThree(){
       }
     }
   }
-  tie = true;
+  ::tie = true;
   return false;
 }
